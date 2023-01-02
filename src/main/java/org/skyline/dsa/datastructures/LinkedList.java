@@ -1,4 +1,4 @@
-package org.skyline.datastructure.linkedlist;
+package org.skyline.dsa.datastructures;
 
 import java.util.NoSuchElementException;
 
@@ -127,7 +127,7 @@ public class LinkedList<T> {
             this.addAtTail(data);
             return true;
         }
-        Node<T> nodeBeforeInsertionPoint  = this.getNodeAtIndex(index-1);
+        Node<T> nodeBeforeInsertionPoint  = this.getNodeAtIndex(index - 1);
         if (nodeBeforeInsertionPoint == null) {
             throw new IllegalArgumentException("Invalid index");
         }
